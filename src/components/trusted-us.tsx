@@ -11,7 +11,7 @@ const logos = [
 export default function TrustedUs() {
   return (
     <section className='flex items-center justify-between px-10 py-8'>
-      <h2 className='font-semibold text-2xl'>Trusted Us</h2>
+      <h2 className='font-semibold text-2xl'>Zaufali nam</h2>
       <div className='w-[1050px]'>
         <LogosScroll />
       </div>

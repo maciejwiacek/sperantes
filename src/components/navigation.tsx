@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navigation() {
   return (
-    <nav className='flex justify-between items-center w-full py-4'>
+    <nav className='fixed z-10 bg-white top-0 left-0 flex justify-between items-center w-full py-4 px-6'>
       <Link href='/' className='relative h-[45px]'>
         <Image
           src='/sperantes-icon.svg'

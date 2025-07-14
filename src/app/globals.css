@@ -97,3 +97,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+body > div > section {
+  @apply px-6;
+}

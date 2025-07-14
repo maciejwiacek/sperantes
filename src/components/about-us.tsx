@@ -1,9 +1,11 @@
+import SectionHeading from './section-heading'
+
 export default function AboutUs() {
   return (
-    <section className='py-12 bg-[#E8EDDF]'>
-      <h3 className='text-2xl text-accent font-bold text-center'>O nas</h3>
-      <div className='flex items-center justify-between px-4'>
-        <p className='text-4xl font-bold max-w-[600px]'>
+    <section id='o-nas' className='py-12 bg-[#E8EDDF]'>
+      <SectionHeading>O nas</SectionHeading>
+      <div className='flex items-center justify-between'>
+        <p className='text-3xl font-bold max-w-[600px]'>
           Profesjonalna obsługa księgowa i kadrowo-płacowa dla Twojej firmy
         </p>
         <p className='max-w-[550px]'>

@@ -3,8 +3,8 @@ import ContactForm from './contact-form'
 
 export default function Hero() {
   return (
-    <div>
-      <div className='relative h-[800px] w-full rounded-4xl overflow-hidden'>
+    <section>
+      <div className='relative h-[800px] w-full rounded-4xl overflow-hidden mt-20'>
         <Image
           src='/hero-image.png'
           alt='Sperantes hero image'
@@ -15,7 +15,7 @@ export default function Hero() {
           priority
         />
 
-        <div className='absolute inset-0 z-10 flex items-center justify-between px-40 text-white'>
+        <div className='absolute inset-0 z-10 flex items-center justify-center gap-24 text-white'>
           <div className='max-w-xl space-y-4'>
             <h1 className='font-bold text-5xl text-left'>
               Twoja księgowość.
@@ -32,6 +32,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
