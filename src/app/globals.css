@@ -99,5 +99,31 @@
 }
 
 body > div > section {
+  @apply px-12;
+}
+
+body > div > section:first-of-type {
   @apply px-6;
+}
+
+.blur-mask-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(8px);
+  z-index: 9;
+  mask: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    transparent 45%
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.5) 45%,
+    transparent 65%
+  );
 }
