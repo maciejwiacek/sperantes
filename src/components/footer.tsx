@@ -14,7 +14,7 @@ export default function Footer() {
           height={32}
         />
         <p className='text-center text-sm text-gray-500 dark:text-gray-400'>
-          © {new Date().getFullYear()} Your Company Name. All rights reserved.
+          © {new Date().getFullYear()} Sperantes. All rights reserved.
         </p>
         <SocialIcon
           url='https://www.facebook.com/profile.php?id=100054572824253'

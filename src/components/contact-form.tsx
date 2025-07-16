@@ -29,8 +29,27 @@ export default function ContactForm() {
     },
   })
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log('Form submitted:', data)
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    const formData = new FormData()
+    formData.append('name', data.name)
+    formData.append('email', data.email)
+    formData.append('message', data.message)
+    formData.append('access_key', process.env.NEXT_PUBLIC_WEB3_FORMS || '')
+
+    const object = Object.fromEntries(formData)
+    const json = JSON.stringify(object)
+
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: json,
+    }).then((res) => res.json())
+
+    if (res.success) {
+      console.log('Success', res)
+    }
   }
 
   return (

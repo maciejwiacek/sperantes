@@ -65,7 +65,7 @@ export default function Services() {
     <section id='uslugi' className='py-12'>
       <SectionHeading>Usługi</SectionHeading>
 
-      <div className='flex justify-center gap-40 flex-wrap'>
+      <div className='flex justify-between flex-wrap px-10'>
         {serviceData.map((service, index) => (
           <ServiceCard
             key={index}
